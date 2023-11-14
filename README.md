@@ -2,8 +2,7 @@
 
 
 ### Descrição do Projeto:
-O PROJETO CONSISTE NA CRIAÇÃO DE CHAMADAS API REST, DO ESTILO CRUD, PARA QUE O RH DE UMA EMPRESA CONSIGA DESIGNAR CANDIDATOS CADASTRADOS PARA VAGAS ESPECIFICAS NA EMPRESA. 
-
+O projeto consiste na criação de chamada API REST, do estilo CRUD, para que o RH da empresa consiga designar candidatos cadastrados para vagas específicas.
 
 ### Desenvolvedores:
 - Pedro Henrique Sperendio RA: 202125768
@@ -12,24 +11,24 @@ O PROJETO CONSISTE NA CRIAÇÃO DE CHAMADAS API REST, DO ESTILO CRUD, PARA QUE O
 
 ### Tecnologias Empregadas:
 
--Spring Boot 
+- Spring Boot 
 
--Spring Data JPA 
+- Spring Data JPA 
 
-![image](https://github.com/sperendiopedro/APIProject/assets/147004325/9d4cad93-2b70-43e3-a2a4-da480b5a3e5c)
+<img align="center" alt="Bela-Java" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg"> ![image](https://github.com/sperendiopedro/APIProject/assets/147004325/9d4cad93-2b70-43e3-a2a4-da480b5a3e5c) 
    
 ### Descrição da Arquitetura:
 
 ### Funcionalidade
-- Como a API requisitada tinha que ser do tipo CRUD, foi implementado no projeto os 4 métodos: Create, read (ou list), update and delete, retornando isso na forma de um JSON. 
+- Como a API requisitada tinha que ser do tipo CRUD, foi implementado no projeto os 4 métodos: Create, Read (ou List), Update and Delete, retornando isso na forma de um JSON. 
 
 ### Documentação
-- PRESENTE EM FORMA DE COMENTÁRIO NO CÓDIGO. 
+- Presente em forma de comentário no código. 
 
 ### Inovação e Criatividade
-- NOSSA API FUNCIONA PARA QUE EM UMA EMPRESA, O RH CONSIGA ANALISAR PERFÍS DE CANDIDATOS PARA SUAS RESPECTIVAS VAGAS. 
+- Nossa API funciona para que a empresa, o RH consiga analisar perfis de candidatos para suas respectivas vagas.
 
-### Contact
+### Contato
 
 Pedro Henrique Sperendio:
 
