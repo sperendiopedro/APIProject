@@ -11,8 +11,11 @@ O PROJETO CONSISTE NA CRIAÇÃO DE CHAMADAS API REST, DO ESTILO CRUD, PARA QUE O
 
 
 ### Tecnologias Empregadas:
+
 -Spring Boot 
+
 -Spring Data JPA 
+
 ![image](https://github.com/sperendiopedro/APIProject/assets/147004325/9d4cad93-2b70-43e3-a2a4-da480b5a3e5c)
    
 ### Descrição da Arquitetura:
