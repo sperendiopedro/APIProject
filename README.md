@@ -1,4 +1,4 @@
-# Projeto API
+# Projeto API - Relacionamento entre candidato/vaga.
 
 
 ### Descrição do Projeto:
