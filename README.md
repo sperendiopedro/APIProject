@@ -2,31 +2,29 @@
 
 
 ### Descrição do Projeto:
- 
+O PROJETO CONSISTE NA CRIAÇÃO DE CHAMADAS API REST, DO ESTILO CRUD, PARA QUE O RH DE UMA EMPRESA CONSIGA DESIGNAR CANDIDATOS CADASTRADOS PARA VAGAS ESPECIFICAS NA EMPRESA. 
 
 
 ### Desenvolvedores:
 - Pedro Henrique Sperendio RA: 202125768
 - Isabela Nathaly Martins RA: 202113677
 
-### Se você tiver uma sugestão que possa melhorar isso, crie um fork do repositório e também uma solicitação de pull. Você também pode simplesmente abrir uma issue com a tag “aprimoramento”.
 
 ### Tecnologias Empregadas:
-- Java - Spring
-
-   ![image](https://github.com/sperendiopedro/APIProject/assets/147004325/9d4cad93-2b70-43e3-a2a4-da480b5a3e5c)
-
-- Frameworks 
-- Biblioteca
-- Banco de Dados
-
+-Spring Boot 
+-Spring Data JPA 
+![image](https://github.com/sperendiopedro/APIProject/assets/147004325/9d4cad93-2b70-43e3-a2a4-da480b5a3e5c)
+   
 ### Descrição da Arquitetura:
 
 ### Funcionalidade
+- Como a API requisitada tinha que ser do tipo CRUD, foi implementado no projeto os 4 métodos: Create, read (ou list), update and delete, retornando isso na forma de um JSON. 
 
 ### Documentação
+- PRESENTE EM FORMA DE COMENTÁRIO NO CÓDIGO. 
 
 ### Inovação e Criatividade
+- NOSSA API FUNCIONA PARA QUE EM UMA EMPRESA, O RH CONSIGA ANALISAR PERFÍS DE CANDIDATOS PARA SUAS RESPECTIVAS VAGAS. 
 
 ### Contact
 
