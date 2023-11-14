@@ -1,34 +1,47 @@
 package com.APIwork.crm.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.hibernate.annotations.Columns;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
 @Entity 
-
+@Table(name="vagas")
 public class Vagas {	
-	private long id; 
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
 	@Column(nullable = false)
+	private String nmVaga;
 	
-	private String name;
-	@OneToMany(mappedBy = "parentProject")
-	private List<Candidato> c1 = new ArrayList<Candidato>();
+	@Column(nullable = false)
+	private String desc; 
 	
-	public void addCandidato(Candidato newCandidato) {
-		this.c1.add(newCandidato);
+	@Column
+	private String assignTo; 
+	
+	@Column
+	private long candID;
+	
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name = "parentCandidato_id", referencedColumnName = "id")
+	private Candidato parentCandidato; 
+		
+	public Long getId() {
+		return id; 
 	}
-	
-//	public void removeCandidato(Candidato removeCandidato) {
-		//for(int i = 0 ; i<c1.size(); i++) {
-			//Candidato existingCandidato = c1.get(i);
-			//if (removeCandidato.getid() == existingCandidato.getId());
-		//}
-	//}
 }
+	
+
