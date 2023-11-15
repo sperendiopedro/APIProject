@@ -16,8 +16,14 @@ Esse projeto desenvolvido através do Spring Boot, consiste em uma API REST do t
 - Postman
 
 <img align="center" alt="Bela-Java" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg"> ![image](https://github.com/sperendiopedro/APIProject/assets/147004325/9d4cad93-2b70-43e3-a2a4-da480b5a3e5c) 
-   
+![image](https://github.com/sperendiopedro/APIProject/assets/147004325/63919098-a55c-401c-8689-c275537a8aa3)
+
 ### Descrição da Arquitetura:
+A API foi desenvolvida em cima da arquitetura básica do Spring Boot:
+- Criação das Classes "Models"
+- Criação dos Repositórios
+- Definição dos Controllers
+- Utilização do Postman para realização das requisições
 
 ### Funcionalidade
 Como a API requisitada tinha que ser do tipo CRUD, foi implementado no projeto os 4 métodos: Create, Read (ou List), Update and Delete, retornando isso na forma de um JSON. 
@@ -69,9 +75,6 @@ Como alterar:
 Resultado do select após alterar:
 
 ![resultado do select apos alterar patch update](https://github.com/sperendiopedro/APIProject/assets/147004325/498e29b8-9269-483d-bbe0-b15f874d216f)
-
-### Documentação
-- Presente em forma de comentário no código. 
 
 ### Inovação e Criatividade
 - Nossa API funciona para que a empresa, o RH consiga analisar perfis de candidatos para suas respectivas vagas.
