@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -21,7 +22,7 @@ import com.APIwork.crm.model.Candidato;
 import com.APIwork.crm.model.Vagas;
 
 @Controller
-@RequestMapping("/candidato")
+@RequestMapping("/candidatos")
 public class CandidatoController {
 	
 	@Autowired
@@ -68,27 +69,21 @@ public class CandidatoController {
             returnData.put("message", "Id cannot be null");
             return new ResponseEntity<>(returnData, HttpStatus.PRECONDITION_FAILED);
         }
-        Optional<Candidato> candidatoOptional = candidatoFakeDao.findById(deleteCand.getId());
+        Optional<Candidato> candidatoOptional = candidatoFakeDao.findById((Long) deleteCand.getCandId());
         if (!candidatoOptional.isPresent()) {
             returnData.put("message", "Candidato not found");
             return new ResponseEntity<>(returnData, HttpStatus.NOT_FOUND);
         }
         Candidato candidatoToDelete = candidatoOptional.get();
-        for (Vagas vagasToDelete : candidatoToDelete.getVagas()) {
-            vagasFakeDao.delete(vagasToDelete);
-        }
         candidatoFakeDao.delete(candidatoToDelete);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 	
-	public static Boolean hasId(Candidato taskToVerify)
-    	
+	public static Boolean hasId(Candidato candToVerify)	
     {
-        if(taskToVerify.getId() != null) {
+        if(candToVerify.getCandId() != null) {
             return true;
         }
         return false;
     }
-
-
 }
