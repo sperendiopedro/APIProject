@@ -1,7 +1,6 @@
 package com.APIwork.crm.model;
 
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,12 +32,12 @@ public class Candidato {
 	private long id;
     
 	@Column(nullable = false)
-    public String nmCand; 
-    
+    private String nmCand;
+ 
 	@Column(nullable = false)
-    private int CPF; 
-    
-    @Column(nullable= false)
+	private String cpf; 
+	
+	@Column
     private String resCand; 
     
     @JsonIgnore
@@ -63,12 +62,12 @@ public class Candidato {
 		this.nmCand = nmCand;
 	}
 
-	public int getCPF() {
-		return CPF;
+	public String getCPF() {
+		return cpf;
 	}
 
-	public void setCPF(int cPF) {
-		CPF = cPF;
+	public void setCPF(String cPF) {
+		cpf = cPF;
 	}
 
 	public String getResCand() {
